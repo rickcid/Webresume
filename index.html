@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Start Bootstrap - Scrolling Nav</title>
+	<title>RCid</title>
 	
 	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- Custom CSS -->
 	<link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
-	<link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
 	<!-- Fonts -->
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -36,7 +35,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#page-top"><i class="fa fa-star-o"></i> RC Resume<a>
+				<a class="navbar-brand" href="#page-top"><i class="fa fa-star-o"></i> Rick Cid<a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -48,6 +47,9 @@
 					<li class="page-scroll">
 						<a href="#about">About</a>
 					</li>
+          <li class="page-scroll">
+            <a href="#rails">Rails Projects</a>
+          </li>
 					<li class="page-scroll">
 						<a href="#education">Education</a>
 					</li>					
@@ -55,7 +57,7 @@
 						<a href="#experience">Work History</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#projects">Projects</a>
+						<a href="#projects">Business Projects</a>
 					</li>
 				</ul>
 			</div>
@@ -72,68 +74,180 @@
 				<div class="col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">	
 					<iframe src="https://fast.wistia.net/embed/iframe/8spkwc2qzd?videoFoam=true" allowtransparency="true" frameborder="1" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6">	
+				<div id="hero-content-box" class="col-sm-6 col-md-6 col-lg-6">	
 					<h4 class="hero-content-title">Rick Cid</h4>
 					<p class="hero-content-text">Hi, I'm Rick Cid. Welcome to my personal website.</p>
-				</div>
-				<div class="page-scroll">
+				  <div class="page-scroll">
 					<a href="#about"><i class="fa fa-arrow-circle-o-down fa-5x"></i></a>
-				</div>
+				  </div>
+        </div>
 			</div>
 		</div>
 
 	</section>
 
-	<!-- About Section -->
-	<section id="about" class="about-section">
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+        <h2 class="section-title">ABOUT</h2>
+        <hr>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="well">
+                <h4>About Me</h4>
+                <p>Hi, My name is Rick Cid and I am a Ruby on Rails developer looking to join an awesome team of developers.  I put together this website to give you a feel for what I can bring to a team. Please take a look at the three RoR demo projects I have included below.  I hope they will give you some insight into the level of skill I have with Rails.</p>
+                <p>In addition, take a look at some of the business projects I have performed in the past.  I extensive experience in start-up's and have participated in numerous business ventures that have given me some great experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-scroll">
+            <a href="#rails"><i class="fa fa-arrow-circle-o-down fa-3x"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+	<!-- Rails Section -->
+	<section id="rails" class="rails-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-				<h2 class="section-title">ABOUT</h2>
+				<h2 class="section-title">Rails Projects</h2>
 				<hr>
 
 					<div class="row">
 						<div class="col-md-12">
 							<div class="well">
-								<img data-src="holder.js/300x200" alt="...">
-								<div class="caption">
-									<h3>Thumbnail label</h3>
-									<p>...</p>
-									<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-								</div>
+								<h4>Ruby on Rails Projects</h4>
+                <p>The following projects are personal projects that I have included as demo's to give some insight into the level of skill I have with Ruby and Rails. I studied Rails on my own, and then took a six-month intensive developer boot camp to learn how to properly design beautiful applications. After completing the program I started developing projects for companies in need of web based management applications. Check out my GitHub repository for a few projects that are public.</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-sm-6 col-md-4">
-							<div class="well">
-								<img data-src="holder.js/300x200" alt="...">
+							<div class="thumbnail">
+
+								<a href="#myflixModal" data-toggle="modal" class="thumbnail inner-thumbnail"><img src="images/myflixsm.png" alt="300x200"></a>
 								<div class="caption">
-									<h3>Thumbnail label</h3>
-									<p>...</p>
-									<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+									<h4 class="app-title">MyFlix</h4>
 								</div>
+                <!--Modal-->
+                <div class="modal fade" id="myflixModal" tabindex="-1" role="dialog" aria-labelledby="myflixModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myflixModalLabel">MyFlix Application</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <div class="media thumbnail">
+                          <a class="center" href="http://myflixrc.herokuapp.com/">
+                            <img class="media-object" src="images/myflix.png" alt="300x200">
+                          </a>
+                        </div>
+                        <hr>
+                        <div class="media-body">
+                          <p class="media-paragraph"><b>MyFlix</b> is an application that mimics the well known <a href="www.netflix.com">NetFlix</a> movie on demand service.  It is a production quality application featuring full payment processing, account management, and administration capabilities. It also includes service features that are popular in modern applications, including social media.</p>
+                          <p class="media-paragraph">Take a look at the application's code in <a href="https://github.com/rickcid/myflix">my GitHub repository</a>. There you will find that I used TDD and BDD development processes.</p>
+                          <p class="media-paragraph">Go ahead and click the MyFlix application image to be directed to the application's access page that includes instructions on how to log-in.</p>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-4">
-							<div class="well">
-								<img data-src="holder.js/300x200" alt="...">
+							<div class="thumbnail">
+
+								<a href="#publicaloModal" data-toggle="modal" class="thumbnail inner-thumbnail"><img src="images/Publicalosm.png" alt="300x200"></a>
 								<div class="caption">
-									<h3>Thumbnail label</h3>
-									<p>...</p>
-									<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+									<h4 class="app-title">¡Publícalo!</h4>
 								</div>
+                <!--Modal-->
+                <div class="modal fade" id="publicaloModal" tabindex="-1" role="dialog" aria-labelledby="publicaloModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="publicaloModalLabel">¡Publícalo!</h4>
+                      </div>
+                      <div class="modal-body">
+ 
+                      <div class="media thumbnail">
+                        <a class="center" href="http://publicalo.herokuapp.com/">
+                          <img class="media-object" src="images/publicalo.png" alt="300x200">
+                        </a>
+                      </div>
+                      <hr>
+                      <div class="media-body">
+                        <p class="media-paragraph"><b>¡Publícalo!</b> is a social discussion board Ruby on Rails application that mimics the well-known <a href="http://www.reddit.com/">Reddit</a> social news website. This application is in Spanish, and it allows users to post links to web content that other users may then vote up or down, causing the posts to appear more or less prominently on the page.</p>
+                        <p class="media-paragraph">Take a look at the application's code in <a href="https://github.com/rickcid/publicalo_project">my GitHub repository</a>.</p>
+                        <p class="media-paragraph">Go ahead and click the application image to be directed to the ¡Publícalo! front page.</p>
+                        <p class="media-paragraph">Use <b>U:</b> john@example.com <b>P:</b> letmein to access the voting functionality.</p>
+                      </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-4">
-							<div class="well">
-								<img data-src="holder.js/300x200" alt="...">
+							<div class="thumbnail">
+
+								<a href="#blackjackModal" data-toggle="modal" class="thumbnail inner-thumbnail"><img src="images/Blackjacksm.png" alt="300x200"></a>
 								<div class="caption">
-									<h3>Thumbnail label</h3>
-									<p>...</p>
-									<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+									<h4 class="app-title">Blackjack</h4>
 								</div>
+                <!--Modal-->
+                <div class="modal fade" id="blackjackModal" tabindex="-1" role="dialog" aria-labelledby="blackjackModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="blackjackModalLabel">Blackjack</h4>
+                      </div>
+                      <div class="modal-body">
+                      
+                      <div class="media thumbnail">
+                        <a class="center" href="http://rc-blackjack21.herokuapp.com/new_player">
+                          <img class="media-object" src="images/blackjack.png" alt="300x200">
+                        </a>
+                      </div>
+                      <hr>
+                      <div class="media-body">
+                        <p class="media-paragraph"><b>BlackJack</b> is a fun and engaging blackjack game I built in Ruby, using the Sinatra web development framework.</p>
+                        <p class="media-paragraph">Take a look at the application's code in <a href="https://github.com/rickcid/blackjack_application">my GitHub repository</a>.</p>
+                        <p class="media-paragraph">Go ahead and click the application image to try your luck at blackjack!</p>
+                      </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
 							</div>
 						</div>
 					</div>
@@ -142,9 +256,10 @@
 						<div class="col-md-12">
 							<div class="well">
 								<h4><i class="fa fa-github fa-2x"></i> Github -<span><a href="https://github.com/rickcid"> My Repo</a></h4>
-								<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf</p>
-								<h4><i class="fa fa-tumblr-square fa-2x"></i> Tumblr -<span><a href="https://http://rrcid.tumblr.com/"> My Technical Blog</a></h4>
-								<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf</p>
+								<p>Check out my github repository.  This is where I keep the code for the majority of the projects I am working on.</p>
+                <hr>
+								<h4><i class="fa fa-tumblr-square fa-2x"></i> Tumblr -<span><a href="http://rrcid.tumblr.com/"> My Technical Blog</a></h4>
+								<p>This is a blog I keep up for my own purposes, with random learnings I jot down from my climb towards becoming a full stack developer.</p>
 							</div>
 						</div>
 					</div>
@@ -172,10 +287,10 @@
 								<h4><i class="fa fa-graduation-cap fa-2x"></i> Thunderbird School of Global Management</h4>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<h4 class="grad-date-right">May 2005</h4>
+								<h4 class="grad-date">May 2005</h4>
 							</div>
 						</div>
-						<h5><em>MBA in Global Management; International Business Strategy concentration</em></h5>
+						<p><em><span class="embolden">MBA in Global Management</span>; International Business Strategy concentration</em></p>
 						<p>#1 ranked <a href="http://www.thunderbird.edu/">International MBA program</a> by the Financial Times, Wall Street Journal, and U.S. News and World Report.</p>
 					</div>
 					<div class="well">
@@ -184,16 +299,22 @@
 								<h4><i class="fa fa-graduation-cap fa-2x"></i> Arizona State University</h4>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<h4 class="grad-date-right">Dec 2002</h4>
+								<h4 class="grad-date">Dec 2002</h4>
 							</div>
 						</div>
-						<h5><em>Bachelor of Science, Finance; Bachelors of Arts, Italian; Minor, Portuguese</em></h5>
+						<p><em><span class="embolden">Bachelor of Science</span>, Finance; <span class="embolden">Bachelors of Arts</span>, Italian; <span class="embolden">Minor</span>, Portuguese</em></p>
 					</div>
-					<div class="well">
-						<h4>Hispand Consulting</h4>
-						<p>Founder - (July 2008 - Present)</p>
-						<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf sjkjf lajf  askjfklasjfklj fjaklfjdlkaj fajf sdjfksdfja  jasljdklfj;afjjdjfklajj jfklajfklasdjfiejfkjfijrjiajcickd  cjidjd kyiueilkvjtkeine  kd flkkkd kerit   fkritsti  skafkaj cidi. </p> <a href="www.hispand.com">Read More</a>
-					</div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-xs-8 col-sm-8 col-md-8">
+                <h4><i class="fa fa-language fa-2x align-sm-language-fa"></i> Language Skills</h4>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4">
+                <h4 class="grad-date"></h4>
+              </div>
+            </div>
+            <p class="align-sm-text"><em><span class="embolden">English &amp; Spanish</span>: Native, <span class="embolden">Italian &amp; Portuguese</span>: Fluent spoken, proficient written</em></p>
+          </div>
 					<div class="page-scroll">
 						<a href="#experience"><i class="fa fa-arrow-circle-o-down fa-3x"></i></a>
 					</div>
@@ -214,18 +335,18 @@
 
 					<div class="well">
 						<h4>Hispand Consulting</h4>
-						<p>Founder - (July 2008 - Present)</p>
-						<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf sjkjf lajf  askjfklasjfklj fjaklfjdlkaj fajf sdjfksdfja  jasljdklfj;afjjdjfklajj jfklajfklasdjfiejfkjfijrjiajcickd  cjidjd kyiueilkvjtkeine  kd flkkkd kerit   fkritsti  skafkaj cidi. </p> <a href="www.hispand.com">Read More</a>
+						<p>Founder - (July 2005 - Present)</p>
+						<p>I founded Hispand Consulting while studying at Thunderbird. After finishing a business-consulting course, I was asked to continue on various projects by actual clients from the course. I formed Hispand Consulting as the official business platform from which to service those clients.</p>
+            <p>I took a two-year break from Hispand in order to build global start-ups for AIG, but since then I have continued to perform various projects for several clients, including opening an Hispand office in Mexico that employed 150-plus individuals. You can find more details about these projects in the <span class="page-scroll"><a href="#projects">Business Projects</a></span> section down below.
 					</div>
 					<div class="well">
-						<h4>Hispand Consulting</h4>
-						<p>Founder - (July 2008 - Present)</p>
-						<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf sjkjf lajf  askjfklasjfklj fjaklfjdlkaj fajf sdjfksdfja  jasljdklfj;afjjdjfklajj jfklajfklasdjfiejfkjfijrjiajcickd  cjidjd kyiueilkvjtkeine  kd flkkkd kerit   fkritsti  skafkaj cidi. </p> <a href="www.hispand.com">Read More</a>
+						<h4>American International Group, Inc. (AIG)</h4>
+						<p>Global Manager - (July 2006 - 2008)</p>
+						<p>At AIG I was given the opportunity to build new business lines and distribution channels around the world! I started off based in Greece, where I oversaw the development and worldwide integration of new insurance products.  Then, I was placed in Russia to grow a newly started agency distribution channel, growing it to 800-plus agents in less than nine months. Finally, I was given the opportunity to start distribution channels in 15 countries within the Middle East, Africa, and Southeast Asia. The time spent at AIG was a great experience and gave me the confidence to be able to open global operations for clients and myself, later on at Hispand Consulting.</p>
 					</div>
-					<div class="well">
-						<h4>Hispand Consulting</h4>
-						<p>Founder - (July 2008 - Present)</p>
-						<p>This is school infokflkdjfklajfkas;lfkas;lfjas;jfkldasjfklasdjfdslafj fkdjfkaljfklsadj  ksdjfkldsfjakl sdklfak fkldsj kfjsdkfjklajfkl;ajfklflkajf;asflaksjf fsdlkfjklsdjfklasjkajf lasdjflaf. kasjfkla;fjk;alsdjfkladsjfkldsaj fkljsdklfj sdkf s kdj a skfj  j kfjlajdkjakljf sjkjf lajf  askjfklasjfklj fjaklfjdlkaj fajf sdjfksdfja  jasljdklfj;afjjdjfklajj jfklajfklasdjfiejfkjfijrjiajcickd  cjidjd kyiueilkvjtkeine  kd flkkkd kerit   fkritsti  skafkaj cidi. </p> <a href="www.hispand.com">Read More</a>
+					<div class="well well-sm">
+						<h4 class="align-sm-text">Download Resume</h4>
+						<p class="align-sm-text">If you prefer looking at a resume that would make a big corporate HR manager happy, then you can download a PDF of my resume here:<a href="docs/Resume.pdf"> Resume</a></p>
 					</div>
 					<div class="page-scroll">
 						<a href="#projects"><i class="fa fa-arrow-circle-o-down fa-3x"></i></a>
